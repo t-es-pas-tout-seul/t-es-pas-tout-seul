@@ -2,7 +2,7 @@ import React from "react";
 
 function Articles() {
   return (
-    //code here
+<h1>dfgdfg</h1>
   );
 }
 
