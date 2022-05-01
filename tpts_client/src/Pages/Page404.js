@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import uh_what from "../Media/Pictures/uh_what.png"
 
 import './Page404Styling.css';
 

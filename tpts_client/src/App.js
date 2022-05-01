@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Admin from "./Pages/Admin.js";
 import Articles from "./Pages/Articles.js";

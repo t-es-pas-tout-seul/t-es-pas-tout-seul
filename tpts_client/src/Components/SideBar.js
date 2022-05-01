@@ -1,9 +1,9 @@
 import React from "react";
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 
 import { RiHomeHeartFill } from 'react-icons/ri';
-import { AiFillVideoCamera } from 'react-icons/ai';
-import { MdAudiotrack } from 'react-icons/md';
+import { ImVideoCamera } from 'react-icons/im';
+import { AiFillAudio } from 'react-icons/ai';
 import { IoNewspaperSharp } from 'react-icons/io5';
 import { RiAdminFill } from 'react-icons/ri';
 
@@ -29,34 +29,34 @@ const navigate = useNavigate();
     <SideNav.Nav defaultSelected="home">
         <NavItem eventKey="Home">
             <NavIcon>
-            <RiHomeHeartFill size={35} style={{verticalAlign: 'middle'}}/>
+            <RiHomeHeartFill size={30} style={{verticalAlign: 'middle'}}/>
             </NavIcon >
             <NavText>
                 <strong>Menu Principal</strong>
             </NavText>
         </NavItem>
 
+        <NavItem eventKey="Audio">
+            <NavIcon>
+            <AiFillAudio size={30} style={{verticalAlign: 'middle'}}/>
+            </NavIcon>
+            <NavText>
+                Audio
+            </NavText>
+        </NavItem>
+        
         <NavItem eventKey="Videos">
             <NavIcon>
-            <AiFillVideoCamera size={35} style={{verticalAlign: 'middle'}}/>
+            <ImVideoCamera size={30} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Videos
             </NavText>
         </NavItem>
 
-        <NavItem eventKey="Audio">
-            <NavIcon>
-            <MdAudiotrack size={35} style={{verticalAlign: 'middle'}}/>
-            </NavIcon>
-            <NavText>
-                Audio
-            </NavText>
-        </NavItem>
-
         <NavItem eventKey="Articles">
             <NavIcon>
-            <IoNewspaperSharp size={35} style={{verticalAlign: 'middle'}}/>
+            <IoNewspaperSharp size={30} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Articles
@@ -65,7 +65,7 @@ const navigate = useNavigate();
 
         <NavItem eventKey="Admin">
             <NavIcon>
-            <RiAdminFill size={35} style={{verticalAlign: 'middle'}}/>
+            <RiAdminFill size={30} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Admin
