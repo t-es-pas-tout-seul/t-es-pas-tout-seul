@@ -1,6 +1,14 @@
 import React from "react";
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 
+import { RiHomeHeartFill } from 'react-icons/ri';
+import { AiFillVideoCamera } from 'react-icons/ai';
+import { MdAudiotrack } from 'react-icons/md';
+import { IoNewspaperSharp } from 'react-icons/io5';
+import { RiAdminFill } from 'react-icons/ri';
+
+
+
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -21,16 +29,16 @@ const navigate = useNavigate();
     <SideNav.Nav defaultSelected="home">
         <NavItem eventKey="Home">
             <NavIcon>
-                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
-            </NavIcon>
+            <RiHomeHeartFill size={35} style={{verticalAlign: 'middle'}}/>
+            </NavIcon >
             <NavText>
-                Menu Principal
+                <strong>Menu Principal</strong>
             </NavText>
         </NavItem>
 
         <NavItem eventKey="Videos">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+            <AiFillVideoCamera size={35} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Videos
@@ -39,7 +47,7 @@ const navigate = useNavigate();
 
         <NavItem eventKey="Audio">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+            <MdAudiotrack size={35} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Audio
@@ -48,7 +56,7 @@ const navigate = useNavigate();
 
         <NavItem eventKey="Articles">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+            <IoNewspaperSharp size={35} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Articles
@@ -57,7 +65,7 @@ const navigate = useNavigate();
 
         <NavItem eventKey="Admin">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+            <RiAdminFill size={35} style={{verticalAlign: 'middle'}}/>
             </NavIcon>
             <NavText>
                 Admin
