@@ -7,14 +7,15 @@ import Videos from "./Pages/Videos.js";
 import Home from "./Pages/Home.js";
 import Page404 from "./Pages/Page404.js";
 
-import BurgerMenu from "./Components/BurgerMenu.js";
+import SideBar from "./Components/SideBar";
 
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <Router>
     <div className="App">
-      <BurgerMenu/>
+      <SideBar/>
       <Routes>
       <Route path="/Home" element={<Home/>} />
       <Route path="/Audio" element={<Audio/>} />

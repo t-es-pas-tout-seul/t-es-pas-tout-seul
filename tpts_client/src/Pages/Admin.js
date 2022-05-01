@@ -2,7 +2,7 @@ import React from "react";
 
 function Admin() {
   return (
-<h1>dfgdfg</h1>
+<h1>Admin</h1>
   );
 }
 
