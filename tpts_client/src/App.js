@@ -22,7 +22,7 @@ function App() {
       <Route path="/Videos" element={<Videos/>} />
       <Route path="/Articles" element={<Articles/>} />
       <Route path="/Admin" element={<Admin/>} />
-      <Route path="/404" element={<Page404/>} />
+      <Route path="*" element={<Page404/>} />
       </Routes>
     </div>
     </Router>
